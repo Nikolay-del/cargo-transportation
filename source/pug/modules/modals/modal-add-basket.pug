@@ -1,0 +1,17 @@
+.modal.modal--add-basket
+  .modal__container
+    h3.modal__heading Добавить в корзину
+    form(action="" method="get")
+      fieldset.modal__fieldset
+        legend Выберите размер:
+        ul.modal__list-radio
+          li.modal__item-radio
+            input(type="radio" id="S" name="size" checked)
+            label(for="S") S
+          li.modal__item-radio
+            input(type="radio" id="M" name="size")
+            label(for="M") M
+          li.modal__item-radio
+            input(type="radio" id="L" name="size")
+            label(for="L") L
+      button.modal__button(type="submit") Добавить
