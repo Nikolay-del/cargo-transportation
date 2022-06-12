@@ -3,3 +3,12 @@ extends layout/main
 block variables
   -var title = 'Мишка. Главная страница'
   -var pageClass = 'index-page'
+  -var main_heading = "Милые штуки ручной работы для дома"
+
+block content
+  main(class=pageClass)
+    include pages/index/categories
+    include pages/index/popular-product
+    include pages/index/advantages
+    include pages/index/reviews
+    include pages/index/contacts

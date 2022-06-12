@@ -1,0 +1,10 @@
+article.product
+  h3.product__name= product.name
+  p.product__description= product.description
+  picture
+    img(src=product.img_src + "-mobile.jpg" width="260" height="195" alt=product.img_alt)
+  .product__price-wrapper
+    span.product__price= product.price + ' '
+      abbr(title="Рублей") руб.
+    a.product__button-buy(href="#")
+      span.visually-hidden Купить

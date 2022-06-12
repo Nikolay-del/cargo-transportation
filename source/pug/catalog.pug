@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+  -var title = 'Мишка. Каталог'
+  -var pageClass = 'catalog-page'
+  -var main_heading = "Каталог товаров"
+
+block content
+  main(class=pageClass)
+    include pages/catalog/products
