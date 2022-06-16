@@ -20,7 +20,7 @@ section.order-page
           li.order-form__item.order-form__item--color
             fieldset.order-form__fieldset
               legend.order-form__legend Цвет
-              .order-form__inputs.order-form__inputs--radio
+              .order-form__inputs.order-form__inputs--checkbox
                 label.order-form__label
                   span Белый
                   input.order-form__input.order-form__input--checkbox(type="radio" id="white" name="color" checked)
@@ -39,3 +39,18 @@ section.order-page
                 label.order-form__label
                   span Оранжевый
                   input.order-form__input.order-form__input--checkbox(type="radio" id="orange" name="color")
+          li.order-form__item.order-form__item--name
+            fieldset.order-form__fieldset
+              legend.order-form__legend ФИО
+              .order-form__inputs.order-form__inputs--text
+                label.order-form__label
+                  span Имя:
+                  input.order-form__input.order-form__input--text(type="text" id="first-name" name="name" placeholder="Введите ваше имя*")
+                label.order-form__label
+                  span Фамилия:
+                  input.order-form__input.order-form__input--text(type="text" id="surname" name="name" placeholder="Укажите фамилию*")
+                label.order-form__label
+                  span Фамилия:
+                  input.order-form__input.order-form__input--text(type="text" id="patronymic" name="name" placeholder="Отчество, если желаете")
+          li.order-form__item.order-form__item--contacts
+
