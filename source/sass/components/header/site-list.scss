@@ -1,0 +1,23 @@
+.site-list__top {
+  display: none;
+  flex-direction: column;
+}
+
+.site-list__item-top {
+  padding: 0 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__link-top {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  padding: 27px 0 26px 46px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.site-list__bottom {
+  display: none;
+}

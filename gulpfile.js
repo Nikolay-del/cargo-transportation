@@ -106,7 +106,8 @@ const copy = (done) => {
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
     'source/favicons/*',
-    'source/*.webmanifest'
+    'source/*.webmanifest',
+    'source/css/normalize.css'
   ], {
     base: 'source'
   })
@@ -166,10 +167,6 @@ export const build = gulp.series(
     optimizeJS,
     sprite,
     createWebp
-  ),
-  gulp.series(
-    server,
-    watcher
   )
 );
 

@@ -1,7 +1,10 @@
+@import "../css/normalize.css";
 @import "global/variables";
 @import "global/fonts";
 @import "global/global";
+@import "global/mixins";
 // Header
-@import "components/header/header";
 @import "components/header/main-nav";
 @import "components/header/sandwich";
+@import "components/header/site-list";
+@import "components/header/user-list";

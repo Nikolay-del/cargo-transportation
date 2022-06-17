@@ -1,0 +1,27 @@
+.user-list {
+  display: none;
+  flex-direction: column;
+}
+
+.user-list__item {
+  padding: 0 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+.user-list__link {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  padding: 27px 0 26px 46px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  &--search {
+    background: url("../img/icons/search.svg") no-repeat left center;
+  }
+
+  &--cart {
+    background: url("../img/icons/cart.svg") no-repeat left center;
+  }
+}
