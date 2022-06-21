@@ -17,7 +17,7 @@
       background-size: 772px 17px;
     }
 
-    @media(min-width: $tablet-width) {
+    @media(min-width: $desktop-width) {
       height: 23px;
       background-size: 1050px 23px;
     }
@@ -85,12 +85,13 @@
   @media(min-width: $tablet-width) {
     line-height: 100%;
     width: 100px;
-    margin-right: 29px;
+    margin-right: 14px;
+    margin-bottom: 3px;
     text-align: center;
   }
 
   @media(min-width: $desktop-width) {
-    margin: 0 35px 7px 40px;
+    margin: 0 43px 7px 32px;
     order: 1;
   }
 }

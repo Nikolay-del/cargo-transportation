@@ -1,0 +1,186 @@
+.advantages {
+  padding-top: 31px;
+  margin-bottom: 58px;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 56px;
+    margin-bottom: 82px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-top: 68px;
+    margin-bottom: 89px;
+  }
+}
+
+.advantages__heading {
+  margin: 0 0 28px 0;
+  padding: 0;
+  font-size: 1.56rem;
+  line-height: 120%;
+
+  @media(min-width: $tablet-width) {
+    font-size: 2.69rem;
+    line-height: 116%;
+    margin-bottom: 42px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 3.31rem;
+    line-height: 108%;
+    margin-left: 175px;
+    margin-bottom: 39px;
+  }
+}
+
+.advantages__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin: 0 175px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  font-size: 1.06rem;
+  line-height: 118%;
+  font-weight: 700;
+  color: $black;
+
+  @media(min-width: $tablet-width) {
+    font-size: 1.25rem;
+    line-height: 110%;
+    width: 50%;
+  }
+
+  &--ecology {
+    padding-top: 54px;
+    margin-bottom: 30px;
+
+    @media(min-width: $tablet-width) {
+      padding-top: 56px;
+      margin-bottom: 57px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 8px;
+      background: url("../img/icons/icon-ecology.svg") no-repeat;
+      width: 33px;
+      height: 38px;
+    }
+  }
+
+  &--cheap {
+    padding-top: 53px;
+    margin-bottom: 35px;
+
+    @media(min-width: $tablet-width) {
+      order: 2;
+      margin-bottom: 63px;
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../img/icons/icon-cheap.svg") no-repeat;
+      width: 47px;
+      height: 27px;
+    }
+  }
+
+  &--likes {
+    padding-top: 48px;
+    margin-bottom: 32px;
+
+    @media(min-width: $tablet-width) {
+      order: 4;
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 7px;
+      background: url("../img/icons/icon-likes.svg") no-repeat;
+      width: 34px;
+      height: 27px;
+    }
+  }
+
+  &--by-hand {
+    padding-top: 51px;
+    margin-bottom: 33px;
+
+    @media(min-width: $tablet-width) {
+      order: 1;
+      padding-top: 56px;
+      margin-bottom: 56px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 3px;
+      background: url("../img/icons/icon-by-hand.svg") no-repeat;
+      width: 35px;
+      height: 34px;
+    }
+  }
+
+  &--support {
+    padding-top: 49px;
+    margin-bottom: 32px;
+
+    @media(min-width: $tablet-width) {
+      order: 3;
+      padding-top: 54px;
+      margin-bottom: 58px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -6px;
+      background: url("../img/icons/icon-support.svg") no-repeat;
+      width: 55px;
+      height: 23px;
+    }
+  }
+
+  &--package {
+    padding-top: 52px;
+
+    @media(min-width: $tablet-width) {
+      order: 5;
+      padding-top: 49px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 3px;
+      background: url("../img/icons/icon-package.svg") no-repeat;
+      width: 33px;
+      height: 32px;
+    }
+  }
+}
