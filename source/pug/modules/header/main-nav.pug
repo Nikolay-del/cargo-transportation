@@ -1,7 +1,8 @@
-nav.main-nav.main-nav--opened
+nav.main-nav.main-nav--closed
   .main-nav__logo-wrap
     a.main-nav__logo-link(href=pageClass === "index-page" ? false : "index.html")
       picture
+        source(media="(min-width: 1150px)" srcset="img/logo/logo-desktop.svg")
         source(media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg")
         img(src="img/logo/logo-mobile.svg" width="86" height="35" alt="Логотип 'Mishka'")
       if pageClass !== "index-page"
@@ -18,13 +19,12 @@ nav.main-nav.main-nav--opened
         a.site-list__link-top(href="#") Вязание на заказ
     ul.site-list__bottom
       li.site-list__item-bottom
-        a.site-list__link-bottom(href="#") Распродажа
+        a.site-list__link-bottom(href="#") Новые поступления
       li.site-list__item-bottom
-        a.site-list__link-bottom(href="form.html") Вязание на заказ
+        a.site-list__link-bottom(href="form.html") Распродажа
   ul.main-nav__user-list.user-list
     li.user-list__item
       a.user-list__link.user-list__link--search(href="#") Поиск по сайту
     li.user-list__item
       a.user-list__link.user-list__link--cart(href="#") Корзина: пока пуста
-  ul
   p.main-nav__delivery Бесплатная доставка по России

@@ -1,25 +1,29 @@
 section.popular-product
-  .popular-product__container
-    header.popular-product__header
-      h2.popular-product__heading Вязаные корзинки
-      span.popular-product__tag Товар недели
-    p.popular-product__description.
-      Экологически чистая пряжа,
-      ручная работа. Доступны в шести
-      расцветках и трёх размерах.
-    table.popular-product__table
-      tr
-        td Цвет:
-        td тиффани/серый
-      tr
-        td Диаметр:
-        td 25 см
-      tr
-        td Высота:
-        td 15 см
-    .popular-product__picture
-      picture
-        img(src="img/triple-set-mobile.jpg" width="260" height="315")
-    p.popular-product__price Цена: 990 руб.
-    a.popular-product__button(href="#") Заказать
-    
+  .container
+    .popular-product__container
+      header.popular-product__header
+        h2.popular-product__heading Вязаные корзинки
+        span.popular-product__tag Товар недели
+      .popular-product__info
+        p.popular-product__description.
+            Экологически чистая пряжа,
+            ручная работа. Доступны в шести
+            расцветках и трёх размерах.
+        table.popular-product__table
+          tr
+            td Цвет:
+            td тиффани/серый
+          tr
+            td Диаметр:
+            td 25 см
+          tr
+            td Высота:
+            td 15 см
+      .popular-product__picture
+        picture
+          source(media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg")
+          source(media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg")
+          img(src="img/triple-set-mobile.jpg" width="260" height="315" class="popular-product__image")
+      p.popular-product__price Цена: 990 руб.
+      a.popular-product__button(href="#") Заказать
+

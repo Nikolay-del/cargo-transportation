@@ -4,7 +4,12 @@
 @import "global/global";
 @import "global/mixins";
 // Header
+@import "components/header/header";
 @import "components/header/main-nav";
 @import "components/header/sandwich";
 @import "components/header/site-list";
 @import "components/header/user-list";
+// Categories
+@import "components/categories/categories";
+// Popular Product
+@import "components/popular-product/popular-product";

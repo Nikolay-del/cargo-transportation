@@ -1,0 +1,127 @@
+.categories {
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  margin-bottom: 31px;
+
+  &::after {
+    @media(min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      background: url("../img/icons/zigzag-fill-desktop.svg");
+      background-size: 770px 24px;
+      bottom: 0;
+    }
+
+    @media(min-width: $desktop-width) {
+      height: 34px;
+      background-size: 1250px 34px;
+      background-position: 11px 0;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 117px;
+  }
+}
+
+.categories__container {
+  @media(min-width: $tablet-width) {
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.categories__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories__item {
+  position: relative;
+  width: 100%;
+  padding: 0 30px;
+
+  &:nth-child(1n) {
+    background: #63d1bb;
+  }
+
+  &:nth-child(2n) {
+    background: #56c3b2;
+  }
+
+  &--interior::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 64px;
+    background: url("../img/icons/interior.svg") no-repeat;
+
+    @media(min-width: $tablet-width) {
+      top: 30px;
+      right: 36px;
+      width: 41px;
+      height: 61px;
+    }
+  }
+
+  &--toys::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icons/toy.svg") no-repeat;
+
+    @media(min-width: $tablet-width) {
+      top: 31px;
+      right: 33px;
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    padding: 0;
+    width: 50%;
+  }
+}
+
+.categories__link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 1.19rem;
+  line-height: 150%;
+  color: $white;
+
+  span {
+    display: inline-block;
+    padding: 19px 0 26px 0;
+
+    @media(min-width: $tablet-width) {
+      padding: 25px 0 45px 36px;
+    }
+
+    @media(min-width: $desktop-width) {
+      padding: 25px 0 49px 36px;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    font-size: 1.25rem;
+  }
+}
