@@ -1,5 +1,5 @@
 .header__inner {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     border-bottom: 1px solid #ececec;
     padding: 0 50px;
   }
@@ -8,17 +8,17 @@
 .header__title-wrapper {
   margin: 0 auto;
   max-width: 100%;
-  padding: 73px 30px 120px ;
+  padding: 73px 30px 120px;
   background: url("../img/header-bg-mobile.jpg") no-repeat 0 -20px;
   background-size: cover;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 155px 50px 372px;
     background: url("../img/header-bg-tablet.jpg") no-repeat center 0;
     background-size: cover;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 157px 50px 355px;
     background: url("../img/header-bg-desktop.jpg") no-repeat center 0;
     background-size: cover;
@@ -33,12 +33,12 @@
   line-height: 111%;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 2.69rem;
     line-height: 116%;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 61%;
     margin: 0 auto;
     font-size: 3.31rem;

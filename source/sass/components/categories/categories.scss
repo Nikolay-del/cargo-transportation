@@ -5,7 +5,7 @@
   margin-bottom: 31px;
 
   &::after {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 100%;
@@ -15,24 +15,24 @@
       bottom: 0;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       height: 34px;
       background-size: 1250px 34px;
       background-position: 11px 0;
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 117px;
   }
 }
 
 .categories__container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 50px;
     margin: 0 auto;
     max-width: 100%;
@@ -67,7 +67,7 @@
     height: 64px;
     background: url("../img/icons/interior.svg") no-repeat;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 30px;
       right: 36px;
       width: 41px;
@@ -84,7 +84,7 @@
     height: 60px;
     background: url("../img/icons/toy.svg") no-repeat;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 31px;
       right: 33px;
       width: 61px;
@@ -92,7 +92,7 @@
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     width: 50%;
   }
@@ -112,16 +112,16 @@
     display: inline-block;
     padding: 21px 0 31px 0;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding: 25px 0 48px 35px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       padding: 25px 0 53px 36px;
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 1.25rem;
     line-height: 144%;
   }
