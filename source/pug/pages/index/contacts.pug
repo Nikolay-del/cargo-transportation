@@ -1,18 +1,19 @@
 section.contacts
-  .contacts__container
-    h2.contacts__heading Контакты
-    .contacts__info.contacts__info--email
-      .contacts__key e-mail:
-      .contacts__val
-        a.contacts__link-email(href="mailto:info@mimimishkashop.ru") info@mimimishkashop.ru
-    .contacts__info.contacts__info--email
-      .contacts__key e-mail:
-      .contacts__val.
-        г. Санкт-Петербург
-        <br>
-        ул. Большая Конюшенная
-        <br>
-        д. 19/8, офис 101
-    .contacts__map
-    a.contacts__button(href="mailto:info@mimimishkashop.ru") Напишите нам
+    .contacts__container
+      h2.contacts__heading Контакты
+      .contacts__info-wrapper
+        .contacts__info.contacts__info--email
+          .contacts__info-key.contacts__info-key e-mail:
+          .contacts__info-val
+            a.contacts__link-email(href="mailto:info@mimimishkashop.ru") info@mimimishkashop.ru
+        .contacts__info.contacts__info--address
+          .contacts__info-key адрес:
+          .contacts__info-val.
+            г. Санкт-Петербург
+            <br>
+            ул. Большая Конюшенная
+            <br>
+            д. 19/8, офис 101
+      .contacts__map#contacts-map
+      a.contacts__button(href="mailto:info@mimimishkashop.ru") Напишите нам
 

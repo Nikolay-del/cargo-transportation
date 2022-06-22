@@ -1,3 +1,7 @@
+.slider {
+  position: relative;
+}
+
 .slider__review {
   margin: 0 0 33px 0;
   padding: 0;
@@ -5,14 +9,43 @@
   line-height: 200%;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+    font-size: 1.06rem;
+    line-height: 176%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+
+.slider__author {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__author-name {
-  margin: 0;
+  margin: 0 0 3px;
   padding: 0;
   font-size: 1.06rem;
   line-height: 141%;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.13rem;
+    line-height: 133%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.06rem;
+    line-height: 141%;
+  }
 }
 
 .slider__author-contacts {
@@ -22,24 +55,38 @@
   color: #444444;
 }
 
-.slider__author {
-  margin-bottom: 30px;
-}
-
 .slider__control {
   display: flex;
   border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -2px;
+    right: 1px;
+    border: none;
+  }
 }
 
 .slider__control-arrow {
   width: 50%;
   height: 51px;
 
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 26px;
+    padding: 15px 18.5px;
+    box-sizing: content-box;
+  }
+
   &--left {
     background: url("../img/icons/huge-arrow-left.svg") no-repeat;
     background-size: 50px 26px;
     background-position: center center;
     border-right: 1px solid #ececec;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &--right {

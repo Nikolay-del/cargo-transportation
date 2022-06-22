@@ -1,0 +1,19 @@
+.socials {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    margin: -20px;
+    justify-content: start;
+    border: none;
+  }
+}
+
+.socials__link {
+  display: block;
+  padding: 20px;
+}
